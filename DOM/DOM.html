@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <style>
+      /* ul{
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+      } */
+   </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+   <h2 class="tests">Welcom</h2>
+     
+   
+    <div>
+      <h1 id="memo">Logo</h1>
+      <ul id="ull">
+        <li id="li">home</li>
+        <li id="li">about</li>
+        <li id="li">contect</li>
+      </ul>
+    </div>
+    <button class="btn">Chnage</button>
+    <button class="btn2">Chnage</button>
+    <!-- <button  onclick="bedel()">back</button> -->
+
+    <script>
+   //   document.getElementById("memo").style.color = "red";
+   let btns = document.querySelector(".btn");
+   let btns2 = document.querySelector(".btn2");
+   // let btn2 = document.querySelector(".btn2");
+
+
+   // function bedel() {
+   //    document.body.style.backgroundColor = "white";
+   // }
+   
+   btns.addEventListener("click" ,()=>{
+      document.body.style.backgroundColor = "red";
+   })
+
+   btns2.addEventListener("click" ,()=>{
+      document.body.style.backgroundColor = "white";
+   })
+
+
+
+   // let element = document.getElementById("memo");
+   // let test = document.getElementsByClassName("test");
+   // let lis  = document.getElementsByTagName ("ul")
+   // lis.style.display = "flex";
+   let testss = document.querySelector(".tests")
+
+   testss.style.color = "red"
+   testss.style.backgroundColor = "blue";
+   testss.style.fontSize = "2em"
+   testss.style.marginTop = "20px"
+   testss.style.marginBottom = "20px"
+   testss.style.marginLeft = "20px"
+   testss.style.marginRight = "20px"
+   testss.style.padding = "20px"
+
+   
+   // list[0].style.color = "red";
+
+
+   // element.style.color = "yellow";
+   // element.style.backgroundColor = "blue";
+   // element.style.paddingLeft = "20px";
+   // element.style.paddingTop = "20px";
+   // element.style.paddingBottom = "20px";
+   // element.style.fontSize = "3em";
+   // element.style.textAlign = "center";
+
+   
+
+   
+
+
+
+
+     
+   
+
+
+
+
+      // element.onclick = function() {
+      //   element.style.color = "blue";
+      //   element.innerText = "Hello";
+      // }
+     
+     
+    </script>
+  </body>
+</html>

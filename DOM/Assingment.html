@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+   <div class="flex justify-center gap-10 mt-[10%] ">
+      <div id="div1" class="w-[300px] h-[300px] bg-red-600 rounded-xl  hide   display "></div>
+      <div id="div2" class="w-[300px] h-[300px] bg-red-600 rounded-xl  hide   display "></div>
+   </div>
+
+
+   <div class="mt-10 ml-96">
+      <button id="btn1" class="bg-black/65 px-20 py-2 text-4xl text-white rounded-xl "     onclick="hide()" >Hiden</button>
+      <button id="btn2" class="bg-black/65 px-20 py-2 text-4xl text-white rounded-xl"      onclick="display()">display</button>
+   </div>
+
+
+
+   <script>
+
+      let div1 = document.getElementById("div1");
+      let div2 = document.getElementById("div2");
+
+      let btn1 = document.getElementById("btn1");
+      let btn2 = document.getElementById("btn2");
+
+      btn1.addEventListener("click" , ()=>{
+         div1.style.display = "none";
+         div2.style.display = "none";
+         
+      })
+
+      btn2.addEventListener("click" , ()=>{
+         div1.style.display = "block";
+         div2.style.display = "block";
+      })
+      
+      
+      
+
+   </script>
+
+
+
+
+</body>
+</html>
