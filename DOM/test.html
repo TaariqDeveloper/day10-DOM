@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event Example</title>
+    <style>
+        .input-box {
+            border: 2px solid black;
+            width: 20rem;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="Enter Text" class="input-box">
+    <script>
+        let inp = document.querySelector("#inp");
+        inp.addEventListener("input", (e) => {
+            alert(`Waxaad riixday: ${e.target.value}`);
+        });
+    </script>
+</body>
+</html>
